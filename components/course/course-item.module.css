@@ -1,10 +1,10 @@
-.post {
+.course {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   background-color: var(--color-grey-50);
   text-align: center;
 }
 
-.post a {
+.course a {
   color: var(--color-dark);
 }
 
