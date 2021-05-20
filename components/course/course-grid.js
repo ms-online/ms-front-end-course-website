@@ -4,8 +4,8 @@ function CourseGrid(props) {
   const { course } = props
   return (
     <ul className={classes.grid}>
-      {course.map((item) => (
-        <CourseItem />
+      {course.map((courseItem) => (
+        <CourseItem key={courseItem.slug} course={courseItem} />
       ))}
     </ul>
   )

@@ -9,12 +9,19 @@ function CourseItem(props) {
     month: 'long',
     year: 'numeric',
   })
+  const linkPath = `/course/${slug}`
   return (
     <li className={classes.course}>
-      <Link>
+      <Link href={linkPath}>
         <a>
           <div className={classes.image}>
-            <Image src={imagePath} alt={title} width={300} height={200} />
+            <Image
+              src={imagePath}
+              alt={title}
+              width={200}
+              height={100}
+              layout='responsive'
+            />
           </div>
           <div className={classes.content}>
             <h3>{title}</h3>
