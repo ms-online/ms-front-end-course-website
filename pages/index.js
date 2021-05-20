@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <Fragment>
       <Hero />
-      {/* <FeatureCourse /> */}
+      <FeaturedCourse />
     </Fragment>
   )
 }
