@@ -1,1 +1,1 @@
-lesson-1:构建核心页面组件
+lesson-2:主页创建-hero 组件
