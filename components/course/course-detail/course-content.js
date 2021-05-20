@@ -1,5 +1,7 @@
 import CourseHeader from './course-header'
 import classes from './course-content.module.css'
+import ReactMarkdown from 'react-markdown'
+
 function CourseContent() {
   const DUMMY_COURSEItem = {
     title: '前端全系列课程包',
@@ -13,7 +15,7 @@ function CourseContent() {
   return (
     <article className={classes.content}>
       <CourseHeader title={DUMMY_COURSEItem.title} image={imagePath} />
-      {DUMMY_COURSEItem.content}
+      <ReactMarkdown>{DUMMY_COURSEItem.content}</ReactMarkdown>
     </article>
   )
 }
