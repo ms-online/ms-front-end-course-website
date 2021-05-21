@@ -29,6 +29,7 @@ isFeatured: true
 ## 详细大纲
 
 ![课程大纲一](front-end-series-outline-01.png)
+
 ![课程大纲二](front-end-series-outline-02.png)
 
 了解更多[点击](https://ke.qq.com/course/3202425)...

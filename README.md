@@ -1,1 +1,1 @@
-lesson-12:获取 md 文档渲染课程详情页面
+lesson-13:使用 image 组件渲染 markdown 图片
