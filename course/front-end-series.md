@@ -1,5 +1,5 @@
 ---
-titile: 'Web大前端开发工程师精讲班'
+title: 'Web大前端开发工程师精讲班'
 date: '2021-01-01'
 image: 'front-end-series.png'
 excerpt: '本套系列课程涵盖一整套的前端学习的必要知识点,包括HTML5+CSS3入门，以及JS/算法/数据结构，再到常用框架Vue，React，Angular等，包括框架、工具、面试精讲..'
