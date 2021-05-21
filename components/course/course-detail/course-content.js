@@ -2,22 +2,24 @@ import CourseHeader from './course-header'
 import classes from './course-content.module.css'
 import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 function CourseContent(props) {
   const { course } = props
   const imagePath = `/images/course/${course.slug}/${course.image}`
 
   const customRenderer = {
-    img(image) {
-      return (
-        <Image
-          src={`/images/course/${course.slug}/${image.src}`}
-          alt={image.alt}
-          width={700}
-          height={400}
-        />
-      )
-    },
+    // img(image) {
+    //   return (
+    //     <Image
+    //       src={`/images/course/${course.slug}/${image.src}`}
+    //       alt={image.alt}
+    //       width={700}
+    //       height={400}
+    //     />
+    //   )
+    // },
     p(paragraph) {
       const { node } = paragraph
 
@@ -35,6 +37,17 @@ function CourseContent(props) {
         )
       }
       return <p>{paragraph.children}</p>
+    },
+    code(code) {
+      const { className, children } = code //language-js
+      const language = className.split('-')[1] //js
+      return (
+        <SyntaxHighlighter
+          style={atomDark}
+          language={language}
+          children={children}
+        />
+      )
     },
   }
   return (
