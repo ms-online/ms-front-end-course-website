@@ -1,8 +1,18 @@
+import { Fragment } from 'react'
+import Head from 'next/head'
 import CourseContent from '../../components/course/course-detail/course-content'
 import { getCourseData, getCourseFiles } from '../../lib/course-util'
 
 function CourseDetailPage(props) {
-  return <CourseContent course={props.course} />
+  return (
+    <Fragment>
+      <Head>
+        <title>{props.course.title}</title>
+        <meta name='description' content={props.course.excerpt} />
+      </Head>
+      <CourseContent course={props.course} />
+    </Fragment>
+  )
 }
 
 export async function getStaticProps(context) {
